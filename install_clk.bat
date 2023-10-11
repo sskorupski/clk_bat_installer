@@ -38,11 +38,4 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-:: Installe la complétion de clk pour le terminal Batch
-python -m clk -L warning completion install batch
-if %errorlevel% neq 0 (
-    echo Erreur : Échec de l'installation de la complétion de clk pour le terminal Batch.
-    exit /b 1
-)
-
 echo clk successfully installed! Enjoy!
